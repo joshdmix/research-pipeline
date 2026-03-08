@@ -1,0 +1,16 @@
+model:
+  orchestrator: claude-opus-4-6
+  agents: claude-sonnet-4-6
+budget:
+  max_input_tokens: 2000000
+  max_output_tokens: 500000
+concurrency:
+  max_readers: 4
+  max_testers: 4
+discovery:
+  max_papers: 10
+  min_relevance_score: 6
+  date_range_years: 5
+output:
+  base_dir: ./output
+paper_cache: ~/.cache/research-pipeline/papers
